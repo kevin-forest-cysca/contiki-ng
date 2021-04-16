@@ -259,6 +259,8 @@ fs_powerdown(void)
   return RF_CORE_CMD_OK;
 }
 /*---------------------------------------------------------------------------*/
+#include "dev/gpio-hal.h"
+static unsigned count = 0;
 int
 rf_core_power_up()
 {
@@ -304,6 +306,9 @@ rf_core_power_up()
     PRINTF("rf_core_power_up: CMD_PING fail, CMDSTA=0x%08lx\n", cmd_status);
     return RF_CORE_CMD_ERROR;
   }
+
+  //add a led toggle here
+  gpio_hal_arch_write_pin(GPIO_PORT, 7, (count++) % 2);
 
   return RF_CORE_CMD_OK;
 }

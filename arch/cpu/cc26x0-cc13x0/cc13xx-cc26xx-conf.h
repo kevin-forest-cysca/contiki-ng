@@ -208,7 +208,7 @@
 #endif
 
 #ifndef CCXXWARE_CONF_ROM_BOOTLOADER_ENABLE
-#define CCXXWARE_CONF_ROM_BOOTLOADER_ENABLE              1
+#define CCXXWARE_CONF_ROM_BOOTLOADER_ENABLE              0
 #endif
 /** @} */
 /*---------------------------------------------------------------------------*/

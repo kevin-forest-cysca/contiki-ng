@@ -81,8 +81,8 @@
  * Those values are not meant to be modified by the user
  * @{
  */
-#define BOARD_IOID_UART_RX        IOID_2
-#define BOARD_IOID_UART_TX        IOID_3
+#define BOARD_IOID_UART_RX        IOID_12
+#define BOARD_IOID_UART_TX        IOID_13
 #define BOARD_IOID_UART_RTS       IOID_18
 #define BOARD_IOID_UART_CTS       IOID_19
 #define BOARD_UART_RX             (1 << BOARD_IOID_UART_RX)
@@ -97,7 +97,7 @@
  * Those values are not meant to be modified by the user
  * @{
  */
-#define BOARD_IOID_KEY_LEFT       IOID_13
+#define BOARD_IOID_KEY_LEFT       IOID_15
 #define BOARD_IOID_KEY_RIGHT      IOID_14
 #define BOARD_KEY_LEFT            (1 << BOARD_IOID_KEY_LEFT)
 #define BOARD_KEY_RIGHT           (1 << BOARD_IOID_KEY_RIGHT)
@@ -148,7 +148,7 @@
  * @{
  */
 #define PROP_MODE_CONF_TX_POWER_779_930 tx_power_driver_779_930
-#define PROP_MODE_CONF_TX_POWER_431_527 tx_power_driver_431_527
+//#define PROP_MODE_CONF_TX_POWER_431_527 tx_power_driver_431_527
 
 //  simplelink settings use for this board
 #define RF_TX_POWER_TABLE_STYLE RF_TX_POWER_TABLE_SIMPLELINK
@@ -167,8 +167,8 @@
  * also possible to use any other externally-controlled DIO.
  * @{
  */
-#define CCXXWARE_CONF_BL_PIN_NUMBER   BOARD_IOID_KEY_LEFT
-#define CCXXWARE_CONF_BL_LEVEL        0
+//#define CCXXWARE_CONF_BL_PIN_NUMBER   BOARD_IOID_KEY_LEFT
+//#define CCXXWARE_CONF_BL_LEVEL        0
 /** @} */
 /*---------------------------------------------------------------------------*/
 /**
@@ -180,7 +180,6 @@
 #define BOARD_IOID_CS             IOID_11
 #define BOARD_IOID_TDO            IOID_16
 #define BOARD_IOID_TDI            IOID_17
-#define BOARD_IOID_DIO12          IOID_12
 #define BOARD_IOID_DIO15          IOID_15
 #define BOARD_IOID_DIO21          IOID_21
 #define BOARD_IOID_DIO22          IOID_22
@@ -194,7 +193,7 @@
 #define BOARD_IOID_DIO30          IOID_30
 
 #define BOARD_UNUSED_PINS { \
-    BOARD_IOID_CS, BOARD_IOID_TDO, BOARD_IOID_TDI, BOARD_IOID_DIO12, \
+    BOARD_IOID_CS, BOARD_IOID_TDO, BOARD_IOID_TDI, \
     BOARD_IOID_DIO15, BOARD_IOID_DIO21, BOARD_IOID_DIO22, BOARD_IOID_DIO23, \
     BOARD_IOID_DIO24, BOARD_IOID_DIO25, BOARD_IOID_DIO26, BOARD_IOID_DIO27, \
     BOARD_IOID_DIO28, BOARD_IOID_DIO29, \

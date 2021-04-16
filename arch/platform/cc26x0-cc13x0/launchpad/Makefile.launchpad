@@ -7,4 +7,4 @@ BOARD_SOURCEFILES += board.c board-buttons.c xmem.c
 MODULES += arch/dev/ext-flash
 
 ### Signal that we can be programmed with cc2538-bsl
-BOARD_SUPPORTS_BSL=1
+BOARD_SUPPORTS_BSL=0
